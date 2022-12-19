@@ -1,0 +1,6 @@
+@mixin texto__titulo($font-size,$font-family,$color, $wrap){
+    font-family:$font-family;
+    font-size: $font-size;
+    color: $color;
+    flex-wrap: $wrap;
+}

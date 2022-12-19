@@ -1,0 +1,72 @@
+.contenido{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 90px;
+    gap: 50px;
+
+    .textoJu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        margin: 10px;
+        gap: 20px;
+
+        .textoJu__parrafo{
+            font-family: 'roboto';
+            font-size: 18px;
+            line-height: 30px;
+            text-align: center;
+            color: $colorTexto
+        
+        }
+        
+        .textoJu__titulo{
+            @include texto__titulo(30px, roboto, $colorTitulo, wrap);
+        }
+        
+        .textoJu__titulo1{
+            @include texto__titulo(20px, roboto, $colorSubtitulo, wrap);
+        }
+        
+    }
+
+    .contJu{
+        @extend %cont;
+        .contJu__box{
+            @media(max-width: 500px){
+                width: 300px;
+                
+            }
+            @extend %box;
+            .contJu__box__img{
+                @extend %img_box;
+                padding: 5px;
+                transition: 2s;
+            }
+        }
+    }
+
+    .vidJu{
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center ;
+        padding: 5px;
+    
+        .vidJu__va{
+            max-width: 600px;
+            min-width: 300px;
+        }
+        .vidJu__img{
+            width: 241px;
+            height: 300px;
+        }
+    
+    }
+    
+    
+}
