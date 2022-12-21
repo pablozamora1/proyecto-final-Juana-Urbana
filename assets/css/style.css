@@ -26,7 +26,7 @@
   justify-content: space-around;
   overflow: hidden; }
 
-.section_lt .contenido_lt .texto .texto__parrafo, .section_lt .cont .box .box__desc, .contenido_vb .texto1__vb .texto1__parrafo {
+.section_lt .contenido_lt .texto .texto__parrafo, .section_lt .cont .box .box__desc, .contenido_vb .texto1__vb .texto1__parrafo, .box2__cont .box2__desc {
   font-family: 'roboto';
   font-size: 18px;
   line-height: 30px;
@@ -293,11 +293,43 @@ nav {
         .contenido_vb .galeria_vb .cont .box1 .box1__img:hover {
           transform: scale(1.1); }
 
-.contenido .box2__cont .box2__cont--titulo {
-  color: #2f5022; }
+.contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 100px;
+  padding-left: 10%;
+  width: 99%;
+  gap: 10px; }
 
-.contenido .box2__cont .box2__desc {
-  color: #283643; }
+.box2__cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding-bottom: 30px; }
+  .box2__cont .box2__cont--titulo {
+    font-family: roboto;
+    font-size: 30px;
+    color: #2f5022;
+    flex-wrap: wrap;
+    padding-top: 20px; }
+  .box2__cont .box2__desc {
+    width: 80%;
+    padding-top: 20px;
+    color: #283643; }
+
+.cont__mapa {
+  width: 90%;
+  padding-bottom: 30px; }
+  .cont__mapa .box2__mapa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%; }
 
 .titulo_contactos {
   color: #2f5022; }
