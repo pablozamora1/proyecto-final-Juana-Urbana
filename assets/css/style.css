@@ -293,10 +293,10 @@ nav {
         .contenido_vb .galeria_vb .cont .box1 .box1__img:hover {
           transform: scale(1.1); }
 
-.box2__cont .box2__cont--titulo {
+.contenido .box2__cont .box2__cont--titulo {
   color: #2f5022; }
 
-.box2__cont .box2__desc {
+.contenido .box2__cont .box2__desc {
   color: #283643; }
 
 .titulo_contactos {
