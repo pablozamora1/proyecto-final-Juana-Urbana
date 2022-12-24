@@ -13,12 +13,6 @@
                             display: flex;
                             justify-content: center;
                             max-width: 700px;
-                            padding-right: 20px;
-                            @media (max-width: 400px) {
-                                width: 290px;
-                                justify-content: center;
-                                align-items: center;
-                            }
                             
                             .img1__vb{
                                 width: 100%;
