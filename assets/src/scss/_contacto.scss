@@ -1,10 +1,94 @@
-.titulo_contactos{
-    color: $colorTitulo;
+.contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 120px;
+    padding-left: 10%;
+    width: 99%;
+    
+            
+
+    .contacto__titulo{
+        color: $colorTitulo;
+    }
+
+    .Text_cont{
+        padding-top: 20px;
+        font-family: 'roboto';
+        font-size: 18px;
+        line-height: 30px;
+        text-align: justify;
+        color: $colorTexto;
+        width: 90%;
+    }
+
+    .contacto__form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 30px;
+    width: 99%;
+    gap: 10px;
+
+    .contacto__inp1{
+        @include input(70%,30px);
+        
+        @media(max-width: 900px){
+            @include input(90%,30px);
+        }
+    }
+    .contacto__inp2{
+        @include input(70%,30px);
+        
+        @media(max-width: 900px){
+            @include input(90%,30px);
+        }
+
+    }
+
+    .contacto__mensaje{
+        @include input(70%,200px);
+        
+        @media(max-width: 900px){
+            @include input(90%,200px);
+        }
+
+    }
+
+    .boton{
+        padding: 5px;
+        background-color: blue;
+        color: white;
+        border-radius: 5px;
+        width: 100px;
+        font-size: 15px;
+        font-family: 'roboto';
+        font-weight: bold;
+        border: none
+    }
+    .contacto__subtitulo{
+        @extend %texto;
+    }
+
+    }
 }
 
-.Text_cont{
-    font-family: 'roboto';
-    font-size: 18px;
-    line-height: 30px;
-}
+.cont3{
+    @extend %cont;
+    width: 90%;
+    margin-top: 2px;
 
+    .box3{
+        @extend %box;
+
+        .box3__img{
+            width: 70px;
+        }
+
+        .box3__desc{
+            @extend %texto;
+            width: 200px;
+        }
+    }
+}

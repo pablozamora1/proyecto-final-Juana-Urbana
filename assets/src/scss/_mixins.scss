@@ -4,3 +4,9 @@
     color: $color;
     flex-wrap: $wrap;
 }
+
+
+@mixin input($width,$heigth){
+    width: $width;
+    height: $heigth;
+}

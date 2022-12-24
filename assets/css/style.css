@@ -7,7 +7,7 @@
   font-family: roboto;
   src: url(../fonts/Roboto-Regular.ttf); }
 
-.contenido .contJu .contJu__box, .section_lt .cont .box, .contenido_vb .galeria_vb .cont .box1 {
+.contenido .contJu .contJu__box, .section_lt .cont .box, .contenido_vb .galeria_vb .cont .box1, .cont3 .box3 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,13 +20,13 @@
 .contenido .contJu .contJu__box .contJu__box__img, .contenido_vb .galeria_vb .cont .box1 .box1__img {
   width: 90%; }
 
-.contenido .contJu, .section_lt .cont, .contenido_vb .galeria_vb .cont {
+.contenido .contJu, .section_lt .cont, .contenido_vb .galeria_vb .cont, .cont3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   overflow: hidden; }
 
-.section_lt .contenido_lt .texto .texto__parrafo, .section_lt .cont .box .box__desc, .contenido_vb .texto1__vb .texto1__parrafo, .box2__cont .box2__desc {
+.section_lt .contenido_lt .texto .texto__parrafo, .section_lt .cont .box .box__desc, .contenido_vb .texto1__vb .texto1__parrafo, .box2__cont .box2__desc, .contacto .contacto__form .contacto__subtitulo, .cont3 .box3 .box3__desc {
   font-family: 'roboto';
   font-size: 18px;
   line-height: 30px;
@@ -331,13 +331,70 @@ nav {
     align-items: center;
     width: 90%; }
 
-.titulo_contactos {
-  color: #2f5022; }
+.contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 120px;
+  padding-left: 10%;
+  width: 99%; }
+  .contacto .contacto__titulo {
+    color: #2f5022; }
+  .contacto .Text_cont {
+    padding-top: 20px;
+    font-family: 'roboto';
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+    color: #283643;
+    width: 90%; }
+  .contacto .contacto__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 30px;
+    width: 99%;
+    gap: 10px; }
+    .contacto .contacto__form .contacto__inp1 {
+      width: 70%;
+      height: 30px; }
+      @media (max-width: 900px) {
+        .contacto .contacto__form .contacto__inp1 {
+          width: 90%;
+          height: 30px; } }
+    .contacto .contacto__form .contacto__inp2 {
+      width: 70%;
+      height: 30px; }
+      @media (max-width: 900px) {
+        .contacto .contacto__form .contacto__inp2 {
+          width: 90%;
+          height: 30px; } }
+    .contacto .contacto__form .contacto__mensaje {
+      width: 70%;
+      height: 200px; }
+      @media (max-width: 900px) {
+        .contacto .contacto__form .contacto__mensaje {
+          width: 90%;
+          height: 200px; } }
+    .contacto .contacto__form .boton {
+      padding: 5px;
+      background-color: blue;
+      color: white;
+      border-radius: 5px;
+      width: 100px;
+      font-size: 15px;
+      font-family: 'roboto';
+      font-weight: bold;
+      border: none; }
 
-.Text_cont {
-  font-family: 'roboto';
-  font-size: 18px;
-  line-height: 30px; }
+.cont3 {
+  width: 90%;
+  margin-top: 2px; }
+  .cont3 .box3 .box3__img {
+    width: 70px; }
+  .cont3 .box3 .box3__desc {
+    width: 200px; }
 
 .piePag__Img {
   width: 100%; }
