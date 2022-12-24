@@ -26,11 +26,11 @@
   justify-content: space-around;
   overflow: hidden; }
 
-.section_lt .contenido_lt .texto .texto__parrafo, .section_lt .cont .box .box__desc, .contenido_vb .texto1__vb .texto1__parrafo, .box2__cont .box2__desc, .contacto .contacto__form .contacto__subtitulo, .cont3 .box3 .box3__desc {
+.contenido .textoJu .textoJu__parrafo, .section_lt .contenido_lt .texto .texto__parrafo, .section_lt .cont .box .box__desc, .contenido_vb .texto1__vb .texto1__parrafo, .box2__cont .box2__desc, .contacto .contacto__form .contacto__subtitulo, .cont3 .box3 .box3__desc {
   font-family: 'roboto';
   font-size: 18px;
   line-height: 30px;
-  text-align: center;
+  text-align: justify;
   color: #283643; }
 
 nav {
@@ -145,12 +145,6 @@ nav {
     width: 70%;
     margin: 10px;
     gap: 20px; }
-    .contenido .textoJu .textoJu__parrafo {
-      font-family: 'roboto';
-      font-size: 18px;
-      line-height: 30px;
-      text-align: center;
-      color: #283643; }
     .contenido .textoJu .textoJu__titulo {
       font-family: roboto;
       font-size: 30px;
@@ -293,7 +287,7 @@ nav {
         .contenido_vb .galeria_vb .cont .box1 .box1__img:hover {
           transform: scale(1.1); }
 
-.contenido {
+.contenido_ub {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -318,8 +312,7 @@ nav {
     padding-top: 20px; }
   .box2__cont .box2__desc {
     width: 80%;
-    padding-top: 20px;
-    color: #283643; }
+    padding-top: 20px; }
 
 .cont__mapa {
   width: 90%;
