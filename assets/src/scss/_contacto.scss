@@ -89,6 +89,8 @@
         .box3__desc{
             @extend %texto;
             width: 200px;
+            display: flex;
+            justify-content: center;
         }
     }
 }

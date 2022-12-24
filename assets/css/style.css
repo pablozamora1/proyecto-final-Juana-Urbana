@@ -381,7 +381,9 @@ nav {
   .cont3 .box3 .box3__img {
     width: 70px; }
   .cont3 .box3 .box3__desc {
-    width: 200px; }
+    width: 200px;
+    display: flex;
+    justify-content: center; }
 
 .piePag__Img {
   width: 100%; }
